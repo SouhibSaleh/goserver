@@ -2,13 +2,13 @@ package tasks
 
 import (
 	"bytes"
-	"fmt"
 	"io"
 )
 
 func GetLinesChannel(o io.ReadCloser) <-chan string {
 	ch := make(chan string)
 	str := ""
+	
 	go func() {
 		defer close(ch)
 		defer o.Close()
@@ -16,12 +16,17 @@ func GetLinesChannel(o io.ReadCloser) <-chan string {
 			byts := make([]byte, 8)
 			_, err := o.Read(byts)
 			if err != nil {
-				ch <- fmt.Sprintf("%s", err)
+				//ch <- fmt.Sprintf("%s", err)
+				//log.Fatal(err)
 				break
 			}
-
+			if i := bytes.IndexByte(byts, 0); i != -1 {
+				byts = byts[:i]
+			}
 			if i := bytes.IndexByte(byts, '\n'); i != -1 {
+				//	fmt.Println(byts)
 				str += string(byts[:i+1])
+				//	fmt.Println("from test", str)
 				ch <- str
 				str = string(byts[i+1:])
 
