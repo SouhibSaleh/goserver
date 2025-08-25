@@ -1,709 +1,506 @@
-EOFGET / HTTP/1.1
+GET / HTTP/1.1
+Host: localhost:8080
+User-Agent: curl/8.13.0
+Accept: */*
+
+GET / HTTP/1.1
+Host: localhost:8080
+User-Agent: curl/8.13.0
+Accept: */*
+
+GET / HTTP/1.1
+Host: localhost:8080
+User-Agent: curl/8.13.0
+Accept: */*
+
+GET / HTTP/1.1
+Host: localhost:8080
+User-Agent: curl/8.13.0
+Accept: */*
+
+GET / HTTP/1.1
+Host: localhost:8080
+User-Agent: curl/8.13.0
+Accept: */*
+
+GET / HTTP/1.1
+Host: localhost:8080
+User-Agent: curl/8.13.0
+Accept: */*
+
+GET / HTTP/1.1
+Host: localhost:8080
+User-Agent: curl/8.13.0
+Accept: */*
+
+GET / HTTP/1.1
+Host: localhost:8080
+User-Agent: curl/8.13.0
+Accept: */*
+
+GET / HTTP/1.1
+Host: localhost:8080
+User-Agent: curl/8.13.0
+Accept: */*
+
+GET / HTTP/1.1
+Host: localhost:8080
+User-Agent: curl/8.13.0
+Accept: */*
+
+GET / HTTP/1.1
+Host: localhost:8080
+User-Agent: curl/8.13.0
+Accept: */*
+
+GET / HTTP/1.1
+Host: localhost:8080
+User-Agent: curl/8.13.0
+Accept: */*
+
+GET / HTTP/1.1
+Host: localhost:8080
+User-Agent: curl/8.13.0
+Accept: */*
+
+GET / HTTP/1.1
+Host: localhost:8080
+User-Agent: curl/8.13.0
+Accept: */*
+
+GET / HTTP/1.1
+Host: localhost:8080
+User-Agent: curl/8.13.0
+Accept: */*
+
+GET / HTTP/1.1
+Host: localhost:8080
+User-Agent: curl/8.13.0
+Accept: */*
+
+GET / HTTP/1.1
+Host: localhost:8080
+User-Agent: curl/8.13.0
+Accept: */*
+
+GET / HTTP/1.1
+Host: localhost:8080
+User-Agent: curl/8.13.0
+Accept: */*
+
+GET / HTTP/1.1
+Host: localhost:8080
+User-Agent: curl/8.13.0
+Accept: */*
+
+GET / HTTP/1.1
+Host: localhost:8080
+User-Agent: curl/8.13.0
+Accept: */*
+
+GET / HTTP/1.1
+Host: localhost:8080
+User-Agent: curl/8.13.0
+Accept: */*
+
+POST /api/login HTTP/1.1
+Host: localhost:8080
+User-Agent: curl/8.13.0
+Accept: */*
+
+POST /api/login HTTP/1.1
+Host: localhost:8080
+User-Agent: curl/8.13.0
+Accept: */*
+Content-Length: 29
+Content-Type: application/x-www-form-urlencoded
+
+username=john&password=secretPOST /api/login HTTP/1.1
+Host: localhost:8080
+User-Agent: curl/8.13.0
+Accept: */*
+Content-Length: 29
+Content-Type: application/x-www-form-urlencoded
+
+username=john&password=secretPOST /api/login HTTP/1.1
+Host: localhost:8080
+User-Agent: curl/8.13.0
+Accept: */*
+Content-Length: 29
+Content-Type: application/x-www-form-urlencoded
+
+username=john&password=secretPOST /api/login HTTP/1.1
+Host: localhost:8080
+User-Agent: curl/8.13.0
+Accept: */*
+Content-Length: 29
+Content-Type: application/x-www-form-urlencoded
+
+username=john&password=secretPOST /api/login HTTP/1.1
+Host: localhost:8080
+User-Agent: curl/8.13.0
+Accept: */*
+Content-Length: 29
+Content-Type: application/x-www-form-urlencoded
+
+username=john&password=secretPOST /api/login HTTP/1.1
+Host: localhost:8080
+User-Agent: curl/8.13.0
+Accept: */*
+Content-Length: 29
+Content-Type: application/x-www-form-urlencoded
+
+username=john&password=secretPOST /api/login HTTP/1.1
+Host: localhost:8080
+User-Agent: curl/8.13.0
+Accept: */*
+Content-Length: 29
+Content-Type: application/x-www-form-urlencoded
+
+username=john&password=secretPOST /api/login HTTP/1.1
+Host: localhost:8080
+User-Agent: curl/8.13.0
+Accept: */*
+Content-Length: 29
+Content-Type: application/x-www-form-urlencoded
+
+username=john&password=secretPOST /api/login HTTP/1.1
+Host: localhost:8080
+User-Agent: curl/8.13.0
+Accept: */*
+Content-Length: 29
+Content-Type: application/x-www-form-urlencoded
+
+username=john&password=secretPOST /api/login HTTP/1.1
+Host: localhost:8080
+User-Agent: curl/8.13.0
+Accept: */*
+Content-Length: 29
+Content-Type: application/x-www-form-urlencoded
+
+username=john&password=secretPOST /api/login HTTP/1.1
+Host: localhost:8080
+User-Agent: curl/8.13.0
+Accept: */*
+Content-Length: 29
+Content-Type: application/x-www-form-urlencoded
+
+username=john&password=secretPOST /api/login HTTP/1.1
+Host: localhost:8080
+User-Agent: curl/8.13.0
+Accept: */*
+Content-Length: 29
+Content-Type: application/x-www-form-urlencoded
+
+username=john&password=secretPOST /api/login HTTP/1.1
+Host: localhost:8080
+User-Agent: curl/8.13.0
+Accept: */*
+Content-Length: 29
+Content-Type: application/x-www-form-urlencoded
+
+username=john&password=secretPOST /api/login HTTP/1.1
+Host: localhost:8080
+User-Agent: curl/8.13.0
+Accept: */*
+Content-Length: 29
+Content-Type: application/x-www-form-urlencoded
+
+username=john&password=secretPOST /coffee HTTP/1.1
+Host: localhost:8080
+User-Agent: curl/8.13.0
+Accept: */*
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdWhpYiIsInJvbGUiOiJVU0VSIiwidXNlcm5hbWUiOiJzdWhpYiIsImlkIjoxLCJpYXQiOjE3NTI4NjgzNzAsImV4cCI6MTc1Mjk1NDc3MH0.jlo7b0mySQQXSdg6mNW0g5oUgzN0XY5Ak3jBlB4IrwQ
-User-Agent: PostmanRuntime/7.45.0
-Accept: */*
-Postman-Token: 4f70bf41-3df1-4a21-a82c-b5f6c9444938
-Host: localhost:8080
-Accept-Encoding: gzip, deflate, br
-Connection: keep-alive
-Content-Length: 75
+Content-Length: 39
 
-{
-    "username":"suhib",
-    "email":"suhib",
-    "password":"suhib"
-EOF}EOFPATCH / HTTP/1.1
+{"type": "dark mode", "size": "medium"}POST /coffee HTTP/1.1
+Host: localhost:8080
+User-Agent: curl/8.13.0
+Accept: */*
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdWhpYiIsInJvbGUiOiJVU0VSIiwidXNlcm5hbWUiOiJzdWhpYiIsImlkIjoxLCJpYXQiOjE3NTI4NjgzNzAsImV4cCI6MTc1Mjk1NDc3MH0.jlo7b0mySQQXSdg6mNW0g5oUgzN0XY5Ak3jBlB4IrwQ
-User-Agent: PostmanRuntime/7.45.0
-Accept: */*
-Postman-Token: f042852e-d537-4c41-9cd8-500b506131f9
-Host: localhost:8080
-Accept-Encoding: gzip, deflate, br
-Connection: keep-alive
-Content-Length: 75
-
-{
-    "username":"suhib",
-    "email":"suhib",
-    "password":"suhib"
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-read tcp [::1]:8080->[::1]:42282: wsarecv: An existing connection was forcibly closed by the remote host.
-GET /test/test/test HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-read tcp [::1]:8080->[::1]:42285: wsarecv: An existing connection was forcibly closed by the remote host.
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-read tcp [::1]:8080->[::1]:54264: wsarecv: An existing connection was forcibly closed by the remote host.
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-read tcp [::1]:8080->[::1]:54275: wsarecv: An existing connection was forcibly closed by the remote host.
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-read tcp [::1]:8080->[::1]:54279: wsarecv: An existing connection was forcibly closed by the remote host.
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-read tcp [::1]:8080->[::1]:54282: wsarecv: An existing connection was forcibly closed by the remote host.
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-read tcp [::1]:8080->[::1]:54285: wsarecv: An existing connection was forcibly closed by the remote host.
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-read tcp [::1]:8080->[::1]:54306: wsarecv: An existing connection was forcibly closed by the remote host.
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-read tcp [::1]:8080->[::1]:54309: wsarecv: An existing connection was forcibly closed by the remote host.
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-read tcp [::1]:8080->[::1]:54314: wsarecv: An existing connection was forcibly closed by the remote host.
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-read tcp [::1]:8080->[::1]:54320: wsarecv: An existing connection was forcibly closed by the remote host.
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-read tcp [::1]:8080->[::1]:54324: wsarecv: An existing connection was forcibly closed by the remote host.
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-read tcp [::1]:8080->[::1]:54328: wsarecv: An existing connection was forcibly closed by the remote host.
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-read tcp [::1]:8080->[::1]:54334: wsarecv: An existing connection was forcibly closed by the remote host.
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-read tcp [::1]:8080->[::1]:54339: wsarecv: An existing connection was forcibly closed by the remote host.
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-read tcp [::1]:8080->[::1]:54342: wsarecv: An existing connection was forcibly closed by the remote host.
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-read tcp [::1]:8080->[::1]:54349: wsarecv: An existing connection was forcibly closed by the remote host.
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-read tcp [::1]:8080->[::1]:54353: wsarecv: An existing connection was forcibly closed by the remote host.
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
-
-GET / HTTP/1.1
-Host: localhost:8080
-User-Agent: curl/8.13.0
-Accept: */*
+Content-Length: 39
 
-GET / HTTP/1.1
+{"type": "dark mode", "size": "medium"}POST /coffee HTTP/1.1
 Host: localhost:8080
 User-Agent: curl/8.13.0
 Accept: */*
+Content-Type: application/json
+meow: meow
+Content-Length: 39
 
-GET / HTTP/1.1
+{"type": "dark mode", "size": "medium"}POST /coffee HTTP/1.1
 Host: localhost:8080
 User-Agent: curl/8.13.0
 Accept: */*
+Content-Type: application/json
+Content-Length: 39
 
-GET / HTTP/1.1
+{"type": "dark mode", "size": "medium"}POST /coffee HTTP/1.1
 Host: localhost:8080
 User-Agent: curl/8.13.0
 Accept: */*
+Content-Type: application/json
+MEOW: MEOW
+Content-Length: 39
 
-GET /nice HTTP/1.1
+{"type": "dark mode", "size": "medium"}POST /coffee HTTP/1.1
 Host: localhost:8080
 User-Agent: curl/8.13.0
 Accept: */*
+MEOW: MEOW
+Content-Type: application/json
+Content-Length: 39
 
-GET /nice HTTP/1.1
+{"type": "dark mode", "size": "medium"}POST /coffee HTTP/1.1
 Host: localhost:8080
 User-Agent: curl/8.13.0
 Accept: */*
+meow: meow
+Content-Type: application/json
+Content-Length: 39
 
-GET /nice HTTP/1.1
+{"type": "dark mode", "size": "medium"}POST /coffee HTTP/1.1
 Host: localhost:8080
 User-Agent: curl/8.13.0
 Accept: */*
+meow: meow
+Content-Type: application/json
+Content-Length: 39
 
-GET /nice HTTP/1.1
+{"type": "dark mode", "size": "medium"}POST /coffee HTTP/1.1
 Host: localhost:8080
 User-Agent: curl/8.13.0
 Accept: */*
+MEOW: MEOW
+Content-Type: application/json
+Content-Length: 39
 
-GET / HTTP/1.1
+{"type": "dark mode", "size": "medium"}POST /coffee HTTP/1.1
 Host: localhost:8080
 User-Agent: curl/8.13.0
 Accept: */*
+MEOW: MEOW
+Content-Type: application/json
+Content-Length: 39
 
-GET / HTTP/1.1
+{"type": "dark mode", "size": "medium"}POST /coffee HTTP/1.1
 Host: localhost:8080
 User-Agent: curl/8.13.0
 Accept: */*
+Content-Length: 39
+Content-Type: application/json
 
-GET / HTTP/1.1
+{"type": "dark mode", "size": "medium"}POST /coffee HTTP/1.1
 Host: localhost:8080
 User-Agent: curl/8.13.0
 Accept: */*
+Content-Length: 38
+Content-Type: application/json
 
-GET / HTTP/1.1
+{"type": "dark mode", "size": "medium"}POST /coffee HTTP/1.1
 Host: localhost:8080
 User-Agent: curl/8.13.0
 Accept: */*
+MEOW: MEOW
+Content-Type: application/json
+Content-Length: 39
 
-GET / HTTP/1.1
+{"type": "dark mode", "size": "medium"}POST /coffee HTTP/1.1
 Host: localhost:8080
 User-Agent: curl/8.13.0
 Accept: */*
+MEOW: MEOW
+Content-Type: application/json
+Content-Length: 39
 
-GET / HTTP/1.1
+{"type": "dark mode", "size": "medium"}POST /coffee HTTP/1.1
 Host: localhost:8080
 User-Agent: curl/8.13.0
 Accept: */*
+Content-Length: 38
+Content-Type: application/json
 
-GET / HTTP/1.1
+{"type": "dark mode", "size": "medium"}POST /coffee HTTP/1.1
 Host: localhost:8080
 User-Agent: curl/8.13.0
 Accept: */*
+MEOW: MEOW
+Content-Type: application/json
+Content-Length: 39
 
-GET / HTTP/1.1
+{"type": "dark mode", "size": "medium"}POST /coffee HTTP/1.1
 Host: localhost:8080
 User-Agent: curl/8.13.0
 Accept: */*
+Content-Length: 8
+Content-Type: application/json
 
-GET / HTTP/1.1
+{"type": "dark mode", "size": "medium"}POST /coffee HTTP/1.1
 Host: localhost:8080
 User-Agent: curl/8.13.0
 Accept: */*
+Content-Length: 8
+Content-Type: application/json
 
-GET / HTTP/1.1
+{"type": "dark mode", "size": "medium"}POST /coffee HTTP/1.1
 Host: localhost:8080
 User-Agent: curl/8.13.0
 Accept: */*
+Content-Length: 8
+Content-Type: application/json
 
-GET / HTTP/1.1
+{"type": "dark mode", "size": "medium"}POST /coffee HTTP/1.1
 Host: localhost:8080
 User-Agent: curl/8.13.0
 Accept: */*
+Content-Length: 38
+Content-Type: application/json
 
-GET / HTTP/1.1
+{"type": "dark mode", "size": "medium"}POST /submit HTTP/1.1
 Host: localhost:8080
 User-Agent: curl/8.13.0
 Accept: */*
+Content-Length: 7
+Content-Type: application/x-www-form-urlencoded
 
-GET / HTTP/1.1
+$'helloPOST /submit HTTP/1.1
 Host: localhost:8080
 User-Agent: curl/8.13.0
 Accept: */*
+Content-Length: 7
+Content-Type: application/x-www-form-urlencoded
 
-GET / HTTP/1.1
+$'helloPOST /submit HTTP/1.1
 Host: localhost:8080
 User-Agent: curl/8.13.0
 Accept: */*
+Content-Length: 7
+Content-Type: application/x-www-form-urlencoded
 
-GET / HTTP/1.1
+POST /submit HTTP/1.1
 Host: localhost:8080
 User-Agent: curl/8.13.0
 Accept: */*
+Content-Length: 7
+Content-Type: application/x-www-form-urlencoded
 
-GET / HTTP/1.1
+$'helloPOST /submit HTTP/1.1
 Host: localhost:8080
 User-Agent: curl/8.13.0
 Accept: */*
+Content-Length: 12
+Content-Type: application/x-www-form-urlencoded
 
-GET / HTTP/1.1
+hello world!POST /submit HTTP/1.1
 Host: localhost:8080
 User-Agent: curl/8.13.0
 Accept: */*
+Content-Length: 12
+Content-Type: application/x-www-form-urlencoded
 
-GET / HTTP/1.1
+hello world!POST /submit HTTP/1.1
 Host: localhost:8080
 User-Agent: curl/8.13.0
 Accept: */*
+Content-Length: 13
+Content-Type: application/x-www-form-urlencoded
 
-GET / HTTP/1.1
+hello world\nPOST /submit HTTP/1.1
 Host: localhost:8080
 User-Agent: curl/8.13.0
 Accept: */*
+Content-Length: 12
+Content-Type: application/x-www-form-urlencoded
 
-GET / HTTP/1.1
+hello world POST /submit HTTP/1.1
 Host: localhost:8080
 User-Agent: curl/8.13.0
 Accept: */*
+Content-Length: 12
+Content-Type: application/x-www-form-urlencoded
 
-GET / HTTP/1.1
+hello world!POST /submit HTTP/1.1
 Host: localhost:8080
 User-Agent: curl/8.13.0
 Accept: */*
+Content-Length: 15
+Content-Type: application/x-www-form-urlencoded
 
-GET / HTTP/1.1
+hello world!!!!POST /submit HTTP/1.1
 Host: localhost:8080
 User-Agent: curl/8.13.0
 Accept: */*
+Content-Length: 20
+Content-Type: application/x-www-form-urlencoded
 
-GET / HTTP/1.1
+partial contentPOST /submit HTTP/1.1
 Host: localhost:8080
 User-Agent: curl/8.13.0
 Accept: */*
+Content-Length: 20
+Content-Type: application/x-www-form-urlencoded
 
-GET / HTTP/1.1
+partial contentPOST /submit HTTP/1.1
 Host: localhost:8080
 User-Agent: curl/8.13.0
 Accept: */*
+Content-Length: 20
+Content-Type: application/x-www-form-urlencoded
 
-GET / HTTP/1.1
+partial contentPOST /submit HTTP/1.1
 Host: localhost:8080
 User-Agent: curl/8.13.0
 Accept: */*
+Content-Length: 15
+Content-Type: application/x-www-form-urlencoded
 
-GET / HTTP/1.1
+hello world!!!!POST /submit HTTP/1.1
 Host: localhost:8080
 User-Agent: curl/8.13.0
 Accept: */*
+Content-Length: 20
+Content-Type: application/x-www-form-urlencoded
 
-GET / HTTP/1.1
+partial contentPOST /submit HTTP/1.1
 Host: localhost:8080
 User-Agent: curl/8.13.0
 Accept: */*
+Content-Length: 20
+Content-Type: application/x-www-form-urlencoded
 
-GET / HTTP/1.1
+partial contentPOST /submit HTTP/1.1
 Host: localhost:8080
 User-Agent: curl/8.13.0
 Accept: */*
+Content-Length: 20
+Content-Type: application/x-www-form-urlencoded
 
-GET / HTTP/1.1
+partial contentPOST /submit HTTP/1.1
 Host: localhost:8080
 User-Agent: curl/8.13.0
 Accept: */*
+Content-Length: 15
+Content-Type: application/x-www-form-urlencoded
 
-GET / HTTP/1.1
+hello world!!!!POST /submit HTTP/1.1
 Host: localhost:8080
 User-Agent: curl/8.13.0
 Accept: */*
+Content-Length: 15
+Content-Type: application/x-www-form-urlencoded
 
-GET / HTTP/1.1
+partial contentPOST /submit HTTP/1.1
 Host: localhost:8080
 User-Agent: curl/8.13.0
 Accept: */*
+Content-Length: 20
+Content-Type: application/x-www-form-urlencoded
 
-GET / HTTP/1.1
+partial contentPOST /submit HTTP/1.1
 Host: localhost:8080
 User-Agent: curl/8.13.0
 Accept: */*
+Content-Length: 20
+Content-Type: application/x-www-form-urlencoded
 
+partial content

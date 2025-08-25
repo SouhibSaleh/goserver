@@ -1,6 +1,7 @@
 package tests
 
 import (
+	"fmt"
 	"github.com/SouhibSaleh/goserver/tasks"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
@@ -25,4 +26,11 @@ func TestRequestLineParse(t *testing.T) {
 
 	_, err = tasks.RequestFromReader(strings.NewReader("/coffee HTTP/1.1\r\nHost: localhost:42069\r\nUser-Agent: curl/7.81.0\r\nAccept: */*\r\n\r\n"))
 	require.Error(t, err)
+}
+
+func TestHeadersParsing5(t *testing.T) {
+	request, _ := tasks.RequestFromReader(strings.NewReader(("GET / HTTP/1.1\r\nHost: localhost:42069\r\nUser-Agent: curl/7.81.0\r\nAccept: */*\r\n\r\n")))
+
+	fmt.Println(request.Headers)
+
 }

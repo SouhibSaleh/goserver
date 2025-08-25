@@ -16,7 +16,6 @@ func (h *Headers) Set(key string, value string) {
 	if !ok {
 		h.headers[key] = value
 	} else {
-		fmt.Println(key, fmt.Sprintf("%s,%s", val, value))
 		h.headers[key] = fmt.Sprintf("%s,%s", val, value)
 	}
 }
@@ -28,7 +27,6 @@ func (h *Headers) Get(key string) string {
 func isToken(token string) bool {
 	valid := strings.Join(
 		strings.Split("!,#,$,%,&,',*,+,-,.,^,_,`,|,~", ","), "")
-
 	flag := false
 	for _, arg := range token {
 		arg := string(arg)
@@ -63,31 +61,34 @@ func headerParser(data []byte) (string, string, error) {
 }
 
 func (h Headers) Parse(data []byte) (n int, done bool, err error) {
+
 	n = 0
 	done = true
-	isToken("")
-	for {
-		indexEOL := bytes.Index(data[n:], EOL)
-		if indexEOL == -1 {
-			break
-		}
-		if indexEOL == 0 {
-			done = false
-			break
-		}
-		name, value, err := headerParser(data[n : n+indexEOL])
-		if err != nil {
-			return 0, false, err
-		}
-		n += indexEOL + len(EOL)
-		if !isToken(name) {
-			fmt.Println("InValid Header Name")
-			break
-		}
-		h.Set(name, value)
+	indexEOL := bytes.Index(data[n:], EOL)
+
+	if indexEOL == -1 {
+		return 0, false, fmt.Errorf("Something wrong happened with EOL")
 	}
 
-	return n, done, err
+	if indexEOL == 0 {
+		done = true
+		return 0, done, nil
+	}
+
+	name, value, err := headerParser(data[n : n+indexEOL])
+	if err != nil {
+		return 0, false, err
+	}
+
+	n += indexEOL + len(EOL)
+
+	if !isToken(name) {
+		return 0, false, fmt.Errorf("Invalid header name expression")
+	}
+
+	h.Set(name, value)
+
+	return n, false, nil
 }
 func NewHeaders() *Headers {
 	return &Headers{

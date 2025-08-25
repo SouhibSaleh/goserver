@@ -28,7 +28,9 @@ func TcpRead() {
 
 		ss := sb.String()
 		request, err := RequestFromReader(strings.NewReader(ss))
-		fmt.Println(request)
+		fmt.Println("from tcp reader", request)
+		fmt.Println("from tcp reader", request.Headers)
+
 	}
 
 }

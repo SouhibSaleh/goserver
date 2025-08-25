@@ -8,7 +8,7 @@ import (
 func GetLinesChannel(o io.ReadCloser) <-chan string {
 	ch := make(chan string)
 	str := ""
-	
+
 	go func() {
 		defer close(ch)
 		defer o.Close()
@@ -24,9 +24,7 @@ func GetLinesChannel(o io.ReadCloser) <-chan string {
 				byts = byts[:i]
 			}
 			if i := bytes.IndexByte(byts, '\n'); i != -1 {
-				//	fmt.Println(byts)
 				str += string(byts[:i+1])
-				//	fmt.Println("from test", str)
 				ch <- str
 				str = string(byts[i+1:])
 

@@ -3,15 +3,21 @@ package tasks
 import (
 	"errors"
 	"fmt"
+	"github.com/SouhibSaleh/goserver/headers"
 	"io"
+	"strconv"
 	"strings"
+	"time"
 )
 
 type ParsingState string
 
 const (
-	doneState ParsingState = "DONE"
-	initState ParsingState = "INIT"
+	initState    ParsingState = "INIT"
+	headersState ParsingState = "HEADERS"
+	bodyState    ParsingState = "BODY"
+	doneState    ParsingState = "DONE"
+	errState     ParsingState = "ERROR"
 )
 
 type RequestLine struct {
@@ -22,6 +28,17 @@ type RequestLine struct {
 type Request struct {
 	RequestLine
 	ParsingState
+	*headers.Headers
+	Body []byte
+}
+
+func NewRequest() *Request {
+	return &Request{
+		ParsingState: initState,
+		Headers:      headers.NewHeaders(),
+		Body:         make([]byte, 0),
+	}
+
 }
 
 func (r *Request) done() bool {
@@ -29,21 +46,72 @@ func (r *Request) done() bool {
 }
 func (r *Request) parse(data []byte) (int, error) {
 
-	fmt.Println(data)
-	switch r.ParsingState {
-	case initState:
-		for i, arg := range data {
-			if arg == 10 {
-				r.ParsingState = doneState
-				arg, _ := parseRequestLine(string(data[:i]))
-				r.RequestLine = *arg
-				return i + 1, nil
+	currendIndex := 0
+	for {
+		switch r.ParsingState {
+		case initState:
+			for i, arg := range data {
+				if arg == 10 {
+					r.ParsingState = headersState
+					arg, err := parseRequestLine(string(data[:i]))
+					if err != nil {
+						r.ParsingState = errState
+						return 0, err
+					}
+					r.RequestLine = *arg
+					currendIndex = i + 1
+					break
+				}
 			}
+		case headersState:
+			n, done, err := r.Headers.Parse(data[currendIndex:])
+			if err != nil {
+				r.ParsingState = errState
+				return 0, err
+			}
+			if done {
+				val := r.Headers.Get("content-length")
+				currendIndex += 2
+				if len(val) == 0 {
+					r.ParsingState = doneState
+					break
+				}
+				r.ParsingState = bodyState
+				break
+			}
+			currendIndex += n
+		case bodyState:
+			contentBytes, err := strconv.Atoi(r.Headers.Get("content-length"))
+
+			if err != nil {
+				return 0, fmt.Errorf("Something wrong happened with content-length", err)
+			}
+			notFinishedByts := min(contentBytes-len(r.Body), len(data[currendIndex:]))
+
+			fmt.Println(notFinishedByts)
+			time.Sleep(time.Second)
+
+			if notFinishedByts < 0 {
+				r.ParsingState = errState
+				return 0, fmt.Errorf("the number of actual bytes exceed the content-length")
+			}
+
+			r.Body = append(r.Body, data[currendIndex:currendIndex+notFinishedByts]...)
+			currendIndex += notFinishedByts
+			if len(r.Body) == contentBytes {
+				r.ParsingState = doneState
+				break
+			} else if notFinishedByts == 0 {
+				return 0, nil
+			}
+
+		case doneState:
+			return 0, nil
+		default:
+			return 0, fmt.Errorf("Something wrong happened while parsing")
 		}
-	case doneState:
-		return 0, nil
+
 	}
-	return 0, nil
 }
 
 func parseRequestLine(requestLineString string) (r *RequestLine, e error) {
@@ -81,34 +149,36 @@ func parseRequest(s string) (*Request, error) {
 		RequestLine: *requestLine,
 	}
 
-	fmt.Println(request)
 	return request, nil
 }
 
 func RequestFromReader(reader io.Reader) (*Request, error) {
+	fmt.Println()
+	request := NewRequest()
 
-	request := &Request{}
-	request.ParsingState = initState
 	buffer := make([]byte, 1024)
 	bufLen := 0
 
 	for !request.done() {
 		n, err := reader.Read(buffer[bufLen:])
+
 		if err != nil {
 			if errors.Is(err, io.EOF) {
-				request.ParsingState = doneState
+				if request.ParsingState != doneState {
+					return nil, fmt.Errorf("something wrong happened")
+				}
 				break
 			}
-
 			return nil, err
 		}
 		bufLen += n
 		readN, err := request.parse(buffer[:bufLen])
 
 		if err != nil {
-			return nil, err
 
+			return nil, err
 		}
+
 		copy(buffer, buffer[readN:bufLen])
 		bufLen -= readN
 
